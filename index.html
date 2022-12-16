@@ -54,6 +54,36 @@
 
     </header>
 
+    <div class="modal fade bg3" id="TelaLogin" tabindex="-1" role="dialog" aria-labelledby="TelaLogin"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg3">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+        <div class="modal-body">
+
+            <form>
+                <div class="input-field">
+                    <input type="email" class="input-form" name="email" placeholder="Nome de usuário" required>
+                    <div class="underline"></div>
+                  </div>
+                  <div class="input-field">
+                    <input type="password" class="input-form " name="pass" id="pass" placeholder="Senha" required>
+                    <div class="underline"></div>
+                  </div>
+                  <a href="#" class="link-index" onclick="alert('Vish, se vira irmão')">Esqueci minha senha</a><br>
+                  <input type="submit" value="Login" class="input-button">
+            </form>
+      
+        </div>
+
+      </div>
+    </div>
+    </div>
+
 
     <section class="container">
         <div class="row mb-5">
@@ -67,21 +97,12 @@
                 <div class="text-center">
                     <div class="text-center">
                         <h2 class="c1">Login</h2>
-                        <i class="fa-solid fa-spinner c1 icon-index fa-spin-pulse"></i>
+                        <i class="fa-solid fa-spinner c1 icon-index fa-spin-pulse"></i><br>
+                        <a href="#" class="input-button" data-toggle="modal" data-target="#TelaLogin">LOGIN</a>
                     </div>
                    
-                    <form>
-                        <div class="input-field">
-                            <input type="email" class="input-form" name="email" placeholder="Nome de usuário" required>
-                            <div class="underline"></div>
-                          </div>
-                          <div class="input-field">
-                            <input type="password" class="input-form " name="pass" id="pass" placeholder="Senha" required>
-                            <div class="underline"></div>
-                          </div>
-                          <a href="#" class="link-index" onclick="alert('Vish, se vira irmão')">Esqueci minha senha</a><br>
-                          <input type="submit" value="Login" class="input-button">
-                    </form>
+    
+                    
                     
                 </div>
                 
@@ -92,6 +113,20 @@
 
 
     </section>
+
+    <script>
+        function janelalogin(){
+            document.getElementById('teste').style.display = "block"
+        }
+        function fechalogin(){
+            document.getElementById('teste').style.display = "none"
+        }
+    </script>
+
+
+    <script>
+
+    </script>
 
 
 
