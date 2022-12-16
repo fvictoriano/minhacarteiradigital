@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+	width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--third-color);        
+}
+
+:root {
+    --primary-color: #a0e99a;
+    --secondary-color: #caf881; 
+    --third-color: #272727;
+}
+
+.c1 {
+    color: var(--primary-color);
+}
+
+.c2 {
+    color: var(--secondary-color);
+}
+
+.c3 {
+    color: var(--third-color);
+}
+
+.bg1 {
+    background-color: var(--primary-color);
+}
+
+.bg2 {
+    background-color: var(--secondary-color);
+}
+
+.bg3{
+    background-color: var(--primary-color);
+}
+
+.vh50 {
+    height: 50vh;
+}
+
+
+/* ----------------- Menu lateral ----------------- */
+
+/* Menu Lateral */
+.sidebar {
+    height: 100%; /* 100%  */
+    width: 0; /* 0 de largura, é mudado com a função no js */
+    position: fixed; /* Fica fixado */
+    z-index: 1; /* Fica no topo */
+    top: 0;
+    left: 0;
+    background-color: var(--third-color); 
+    overflow-x: hidden; /* Desativa o scroll horizontal quando abre o menu */
+    padding-top: 60px; /* 60px de padding top */
+    transition: 0.7s; /* a transação quando é aberto o menu */
+}
+
+.link-menu {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px;
+    width: 300px;
+}
+
+.link-menu:hover {
+    color: var(--third-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all ease-in-out 0.3s;
+}
+  
+.sidebar a {
+    padding-left: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px; 
+    color: var(--primary-color);
+    display: block;
+    transition: 0.01s;
+}
+  
+  /* Botão de fechar o menu */
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+  /* Botão pra abrir o menu */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+  
+.openbtn:hover {
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border: 1px solid var(--primary-color);
+    outline-style: none;
+    
+}
+
+.openbtn:focus {
+    border:none;
+    outline-style: none;
+}
+
+.logo-menu-admin {
+    width: 6rem;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+#main {
+    transition: margin-left .5s; /* classe css para que tenha uma transição de "empurrar o botão" */
+    padding: 20px;
+    width: 100%;
+}
+
+#bg-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    z-index: 1;
+    
+}
+
+.titulo-area {
+    padding-left: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* --------------------------- INDEX ------------------------ */
+
+.redes-index {
+    font-size: 30px;
+    color: var(--primary-color);
+    padding: 15px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.redes-index:hover {
+    font-size: 35px;
+    color: var(--third-color);
+    background-color: var(--primary-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.logo-index {
+    width: 40%;
+}
+
+.link-index {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.link-index:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.icon-index {
+    font-size: 50px;
+    margin: 15px;
+}
+/* --------------------------- FORMS ------------------------ */
+
+::placeholder {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.input-form {
+    color: var(--primary-color);
+    background: none;
+    margin: 5px;
+    padding: 10px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    outline: none;
+
+}
+
+.input-form:focus {
+    border: 1px solid var(--primary-color);
+
+}
+
+.input-button {
+    color: var(--third-color);
+    background-color: var(--primary-color);
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+
+}
+
+.input-button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border-color: 1px solid var(--primary-color);
+    transition: all ease-in-out 0.2s;
+}
