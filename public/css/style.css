@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+.borda {
+    border: 1px solid red;
+}
+
 
 html {
     overflow-x: hidden;
@@ -185,7 +189,7 @@ body {
 }
 
 .logo-index {
-    width: 40%;
+    width: 30%;
 }
 
 .link-index {
@@ -201,6 +205,29 @@ body {
 .icon-index {
     font-size: 50px;
     margin: 15px;
+}
+
+.cadastro {
+    font-size: 70%;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.cadastro:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.div-central {
+    height: 45vh;
+}
+
+.img-celular {
+    width: 100%;
+}
+
+.texto-index {
+    margin-left: 100px;
 }
 /* --------------------------- FORMS ------------------------ */
 
