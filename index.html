@@ -22,102 +22,111 @@
 </head>
 
 <body>
-    <div id="bg-menu"></div>
-    <header>
-        <div class="col-sm-12 fixed-top">
-            <div id="main" class="navbar">
-            <button class="openbtn" onclick="openNav(), bgmenu()">&#9776;</button>
-            </div>
-        </div>
+  <div id="bg-menu"></div>
+  <header>
+    <div class="col-sm-12 fixed-top">
+      <div id="main" class="navbar">
+        <button class="openbtn" onclick="openNav(), bgmenu()">&#9776;</button>
+      </div>
+    </div>
 
-        <nav>
-            <div id="mySidebar" class="sidebar ">
-            <ul>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), bgmenuClose()">&times;</a>
+    <nav>
+      <div id="mySidebar" class="sidebar ">
+        <ul>
+          
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav(), bgmenuClose()">&times;</a>
+          <br>
+          <br>
+          <li>
+            <a href="#" class="link-menu d-sm-block" id="#">• Entrar</a>
+          </li>
+          <li>
+            <a href="#" class="link-menu d-sm-block" id="#">• Registrar</a>
+          </li>
 
-                <li>
-                <a href="#" class="link-menu d-sm-block" id="#">• Entrar</a>
-                </li>
-                <li>
-                <a href="#" class="link-menu d-sm-block" id="#">• Registrar</a>
-                </li>
-                
 
-                
-            </ul>
-        </nav>
 
-        </div>
+        </ul>
+    </nav>
 
-        
+    </div>
 
-    </header>
 
-    <div class="modal fade bg3" id="TelaLogin" tabindex="-1" role="dialog" aria-labelledby="TelaLogin"
-    aria-hidden="true">
+
+  </header>
+
+  <div class="modal fade bg3" id="TelaLogin" tabindex="-1" role="dialog" aria-labelledby="TelaLogin" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content bg3">
-        <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+        <div class="modal-body d-flex flex-column align-items-center justify-content-center">
 
-            <form>
-                <div class="input-field">
-                    <input type="email" class="input-form" name="email" placeholder="Nome de usuário" required>
-                    <div class="underline"></div>
-                  </div>
-                  <div class="input-field">
-                    <input type="password" class="input-form " name="pass" id="pass" placeholder="Senha" required>
-                    <div class="underline"></div>
-                  </div>
-                  <a href="#" class="link-index" onclick="alert('Vish, se vira irmão')">Esqueci minha senha</a><br>
-                  <input type="submit" value="Login" class="input-button">
-            </form>
-      
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <form>
+            <div class="input-field">
+              <input type="email" class="input-form" name="email" placeholder="Nome de usuário" required>
+              <div class="underline"></div>
+            </div>
+            <div class="input-field">
+              <input type="password" class="input-form " name="pass" id="pass" placeholder="Senha" required>
+              <div class="underline"></div>
+            </div>
+            <a href="#" class="link-index" onclick="alert('Vish, se vira irmão')">Esqueci minha senha</a><br>
+            <input type="submit" value="Login" class="input-button">
+          </form>
+
         </div>
 
       </div>
     </div>
+  </div>
+
+
+  <section class="container-fluid">
+    <div class="row" style="height: 100vh">
+      <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+        <div class="texto-index">
+          <h1 class="c1">Organize suas finanças <br> e alcance seus objetivos.</h1>
+          <p class="c1">Baixe já e alcance suas metas. Totalmente <b>Grátis</b>.</p><br>
+
+          <a href="#" class="input-entrar" data-toggle="modal" data-target="#TelaLogin">ENTRAR</a>
+          <a href="#" class="input-registrar" data-toggle="modal" data-target="#TelaLogin">CRIAR CONTA</a><br><br>
+
+          <img src="public/img/play.png" class=" " width="20%">
+          <img src="public/img/store.png" class=" " width="20%">
+        </div>
+
+        <div>
+         
+        </div>
+
+      </div>
+
+      <div class="col-sm-12 col-md-6 bg1">
+        <img src="public/img/celular.png" class="img-celular">
+      </div>
     </div>
 
 
-    <section class="container-fluid">
-        <div class="row" style="height: 100vh">
-            <div class="col-sm-12 col-md-6 d-flex align-items-center">
-              <div> 
-                <h1 class="c1 texto-index">Organize suas finanças <br> e alcance seus objetivos</h1><br>
-                <p class="c1 texto-index">Baixe já e alcance suas metas. Totalmente <b>Grátis</b>.</p><br>
-                <img src="public/img/play.png" class="texto-index" width="20%">
-                <img src="public/img/store.png" class="texto-index " width="20%">
 
 
-              </div>
-               
-            </div>
-            <div class="col-sm-12 col-md-6 bg1">
-                <img src="public/img/celular.png" class="img-celular">
-            </div>
-        </div>
-     
+  </section>
+
+  <script>
+    function janelalogin() {
+      document.getElementById('teste').style.display = "block"
+    }
+    function fechalogin() {
+      document.getElementById('teste').style.display = "none"
+    }
+  </script>
 
 
+  <script>
 
-    </section>
-
-    <script>
-        function janelalogin(){
-            document.getElementById('teste').style.display = "block"
-        }
-        function fechalogin(){
-            document.getElementById('teste').style.display = "none"
-        }
-    </script>
-
-
-    <script>
-
-    </script>
+  </script>
 
 
 
@@ -128,7 +137,7 @@
 
 
 
-    <footer class="container"><!-- footer -->
+  <footer class="container"><!-- footer -->
     <!--
     <div class="text-center">
         <a href="#" target="_blank" class="m-2 d-inline redes-index"><i class="fab fa-facebook-f"></i></a> 
@@ -141,27 +150,33 @@
         <span class="lead c1" style="font-size: 10px;">© MCD 2023. Todos os direitos reservados.</span>
     </div>
     -->
-    </footer> <!--  fim footer-->
+  </footer> <!--  fim footer-->
 
-   
-    
-  
-  
-  
-    
-    <script src="https://kit.fontawesome.com/9b2a609baa.js" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  
-  </body>
-  
-  </html>  
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/9b2a609baa.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</body>
+
+</html>
