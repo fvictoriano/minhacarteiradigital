@@ -81,7 +81,7 @@ body {
     border-radius: 20px;
     padding: 5px;
     margin: 15px;
-    width: 300px;
+    width: 250px;
 }
 
 .link-menu:hover {
@@ -112,15 +112,13 @@ body {
   
   /* Botão pra abrir o menu */
 .openbtn {
-    font-size: 20px;
+    font-size: 10px;
     cursor: pointer;
     background-color: var(--primary-color);
     color: var(--third-color);
     padding: 10px 15px;
     border-radius: 15px;
     transition: all 0.3s ease;
-    margin-left: 10px;
-    margin-top: 10px;
 }
   
 .openbtn:hover {
@@ -271,6 +269,19 @@ body {
     transition: all ease-in-out .5s;
 }
 
+.img-download {
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-download {
+        width: 40%;
+    }
+    .texto-index {
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+}
 
 
 /* --------------------------- FORMS ------------------------ */
